@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Kite+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kite+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kite+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.navbar .logo {
+  font-family: "Kite One", sans-serif;
+  font-size: 35px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+.navbar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+.navbar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 100%;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  transition: all 0.3s;
+}
+.navbar ul li a:hover {
+  color: #A07D7B;
+}
+.navbar ul li .dropdown-menu {
+  display: none;
+}
+.navbar ul li .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+  padding: 0px;
+}
+.navbar ul li .dropdown-menu ul li {
+  width: 200px;
+  padding: 10px;
+}/*# sourceMappingURL=application.css.map */
