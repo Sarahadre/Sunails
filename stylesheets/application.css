@@ -11,13 +11,15 @@
 .navbar .logo {
   font-family: "Kite One", sans-serif;
   font-size: 35px;
+  color: white;
 }
 .navbar ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 .navbar ul li {
-  padding: 10px 30px;
+  padding: 10px 20px;
   position: relative;
 }
 .navbar ul li:hover .dropdown-menu {
@@ -30,7 +32,7 @@
   text-decoration: none;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
-  color: black;
+  color: white;
   transition: all 0.3s;
 }
 .navbar ul li a:hover {
@@ -47,4 +49,128 @@
 .navbar ul li .dropdown-menu ul li {
   width: 200px;
   padding: 10px;
+}
+
+.nav-btn {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.nav-btn:focus {
+  color: #171e29;
+}
+
+.nav-btn:hover {
+  border-color: #A07D7B;
+  color: #A07D7B;
+  fill: #A07D7B;
+}
+
+.nav-btn:active {
+  border-color: #A07D7B;
+  color: #A07D7B;
+  fill: #A07D7B;
+}
+
+@media (min-width: 768px) {
+  .nav-btn {
+    min-width: 170px;
+  }
+}
+.home-header {
+  height: 700px;
+  width: 100vw;
+  background-image: url(../images/home-banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+.home-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.laser-header {
+  height: 500px;
+  width: 100vw;
+  background-image: url(../images/laser-banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+.laser-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.lashes-header {
+  height: 500px;
+  width: 100vw;
+  background-image: url(../images/lashes-banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+.lashes-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nails-header {
+  height: 500px;
+  width: 100vw;
+  background-image: url(../images/nails-banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+.nails-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=application.css.map */

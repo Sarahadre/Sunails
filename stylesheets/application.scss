@@ -8,3 +8,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
