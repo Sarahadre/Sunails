@@ -132,6 +132,38 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
+.lashes-header {
+  height: 500px;
+  width: 100vw;
+  background-image: url(../images/lashes-banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+.lashes-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nails-header {
+  height: 500px;
+  width: 100vw;
+  background-image: url(../images/nails-banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+.nails-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
 * {
   margin: 0;
   padding: 0;
