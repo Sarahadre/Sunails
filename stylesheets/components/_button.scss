@@ -1,0 +1,48 @@
+.nav-btn {
+  align-items: center;
+  background-color: #ffffff00;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #fff;
+  font-family: "Montserrat",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.nav-btn:focus {
+  color: #171e29;
+}
+
+.nav-btn:hover {
+  border-color: $light-brown;
+  color: $light-brown;
+  fill: $light-brown;
+}
+
+.nav-btn:active {
+  border-color: $light-brown;
+  color: $light-brown;
+  fill: $light-brown;
+}
+
+@media (min-width: 768px) {
+  .nav-btn {
+    min-width: 170px;
+  }
+}
