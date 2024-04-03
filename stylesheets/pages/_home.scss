@@ -1,6 +1,7 @@
+// BANNER
 .home-header {
   height: 700px;
-  width: 100vw;
+  width: 100%;
   background-image: url(../images/home-banner.jpg);
   background-size: cover;
   position: relative;
@@ -13,5 +14,223 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
 
+    .home-banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: white;
+
+      .main-title{
+        font-size: 5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        font-family: "Cormorant Infant", serif;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        line-height: 3.8rem;
+        opacity: 0.8;
+
+        .logo {
+          font-size: 5rem;
+          font-family: "Kite One", sans-serif;
+          align-self: center;
+          font-style: normal;
+          opacity: 1;
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        width: 60%;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .banner-btn {
+        margin-top: 4rem;
+      }
+
+    }
+
+  }
+}
+
+//RECTANGLE INTRO
+.intro {
+  background-color: $beige;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .text-intro {
+    text-align: center;
+    width: 60%;
+  }
+}
+
+//PRESTATIONS/CARDS
+.prestations-bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  margin-top: 50px;
+
+  .title-bloc {
+    font-family: "Cormorant Infant", serif;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 400;
+    color: $brown;
+  }
+
+  .text-bloc {
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .cta {
+    margin-bottom: 5rem;
+  }
+
+}
+
+//RECTAGLE PRESENTATION D'ÉQUIPE
+.team-bloc {
+  background-color: $beige;
+  height: 740px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+
+  img {
+    width: 100%;
+    height: 740px;
+    object-fit: cover;
+  }
+
+  .team-description {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .team-intro {
+      font-family: "montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    .team-title {
+      font-family: "Cormorant Infant", serif;
+      font-size: 65px;
+      font-style: italic;
+      font-weight: 400;
+      color: $brown;
+      margin-bottom: 30px;
+      width: 550px;
+    }
+
+    .team-text {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+      width: 600px;
+      text-align: justify;
+    }
+
+    .line-btn {
+      width: 100px;
+      margin-top: 50px;
+      color: $brown;
+      border: solid 1px $brown;
+
+      &:hover {
+        border-color: white;
+        fill: white;
+        color: white;
+      }
+
+      &:active {
+        border-color: white;
+        color: white;
+        fill: white;
+      }
+    }
+
+  }
+}
+
+//RECTANGLE AVIS
+.reviews {
+  background-image: url(../images/carousel-bg.png);
+  background-size: cover;
+  position: relative;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .carousel-title {
+    font-family: "Cormorant Infant", serif;
+    font-size: 60px;
+    font-style: italic;
+    color: $brown;
+    text-align: center;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
+    transform: translateY(-50%);
+    top: 50%;
+
+  }
+  #prev {
+    left: 20px;
+  }
+
+  #next {
+    right: 20px;
+  }
+
+  .carousel {
+    height: 60%;
+    width: 70%;
+    position: relative;
+
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .slide {
+      margin: auto;
+      text-align: center;
+      opacity: 0;
+      position: absolute;
+      margin-bottom: 20px;
+      width: 100%;
+
+
+      &.slide.active {
+        opacity: 1;
+      }
+    }
   }
 }

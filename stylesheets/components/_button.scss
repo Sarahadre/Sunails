@@ -1,4 +1,7 @@
-.nav-btn {
+//button styles
+
+// button with lines
+.line-btn {
   align-items: center;
   background-color: #ffffff00;
   border: 1px solid #fff;
@@ -25,24 +28,66 @@
   touch-action: manipulation;
 }
 
-.nav-btn:focus {
+.line-btn:focus {
   color: #171e29;
 }
 
-.nav-btn:hover {
+.line-btn:hover {
   border-color: $light-brown;
   color: $light-brown;
   fill: $light-brown;
 }
 
-.nav-btn:active {
+.line-btn:active {
   border-color: $light-brown;
   color: $light-brown;
   fill: $light-brown;
 }
+
+// button full color
+
+.full-btn {
+  background: $light-brown;
+  border: 1px solid $light-brown;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat",sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 16px 18px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.full-btn:hover,
+.full-btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: $light-brown;
+}
+
+.full-btn:active {
+  opacity: .5;
+}
+
+
+
+
+
 
 @media (min-width: 768px) {
-  .nav-btn {
+  .line-btn {
     min-width: 170px;
   }
 }
