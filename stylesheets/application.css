@@ -204,6 +204,83 @@
   opacity: 1;
 }
 
+.footer {
+  background-color: #EFE9E4;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-top {
+  height: 85%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.footer .footer-top .left-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+.footer .footer-top .left-bloc .logo-footer {
+  font-size: 2.8rem;
+  font-family: "Kite One", sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+.footer .footer-top .left-bloc .footer-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: white;
+}
+.footer .footer-top .left-bloc .fa-instagram {
+  font-size: 2.5rem;
+  color: white;
+  margin-right: 10px;
+  font-size: 2.5rem;
+}
+.footer .footer-top .right-bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.footer .footer-top .right-bloc .bloc {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.footer .footer-top .right-bloc .bloc .footer-title {
+  margin-bottom: 15px;
+}
+.footer .footer-top .right-bloc .bloc .footer-text {
+  margin-bottom: 15px;
+}
+.footer .footer-top .right-bloc .bloc .footer-link {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.footer .footer-bottom {
+  height: 15%;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 500;
+}
+.footer .footer-bottom hr {
+  width: 70%;
+  align-self: center;
+  margin: 10px auto 15px auto;
+  border: 1px solid white;
+}
+.footer .footer-bottom a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
 .home-header {
   height: 700px;
   width: 100%;
@@ -354,7 +431,7 @@
   background-image: url(../images/carousel-bg.png);
   background-size: cover;
   position: relative;
-  height: 610px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -366,6 +443,7 @@
   font-style: italic;
   color: #774542;
   text-align: center;
+  margin-top: 15px;
 }
 .reviews .carousel-btn {
   position: absolute;
@@ -375,13 +453,24 @@
   z-index: 2;
   cursor: pointer;
   transform: translateY(-50%);
-  top: 50%;
+  top: 55%;
 }
 .reviews #prev {
   left: 20px;
 }
 .reviews #next {
   right: 20px;
+}
+.reviews .quotes {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 45%;
+}
+.reviews .fa-quote-left {
+  left: 12%;
+}
+.reviews .fa-quote-right {
+  right: 12%;
 }
 .reviews .carousel {
   height: 60%;
@@ -399,11 +488,65 @@
   text-align: center;
   opacity: 0;
   position: absolute;
-  margin-bottom: 20px;
   width: 100%;
+}
+.reviews .carousel .slide .name {
+  font-style: italic;
+  margin-top: 40px;
+  font-size: 30px;
 }
 .reviews .carousel .slide.slide.active {
   opacity: 1;
+  font-family: "cormorant infant", serif;
+  font-size: 25px;
+}
+
+.cta-footer {
+  background-image: url("../images/home-cta.png");
+  background-size: cover;
+  background-position: center;
+  height: 690px;
+  position: relative;
+}
+.cta-footer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cta-footer .background {
+  background-color: #EFE9E4;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 700px;
+  position: relative;
+}
+.cta-footer .background .italic-title {
+  font-family: "cormorant infant", serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: italic;
+  opacity: 0.8;
+}
+.cta-footer .background .normal-title {
+  font-family: "montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 0.1;
+}
+.cta-footer .cta-btn {
+  position: absolute;
+  top: 65%;
 }
 
 .laser-header {

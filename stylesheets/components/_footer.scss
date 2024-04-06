@@ -1,0 +1,94 @@
+// FOOTER
+.footer {
+  background-color: $beige;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+
+  .footer-top {
+    height: 85%;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .left-bloc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 40px;
+
+      .logo-footer {
+        font-size: 2.8rem;
+        font-family: "Kite One", sans-serif;
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      .footer-text {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: white ;
+      }
+
+      .fa-instagram {
+        font-size: 2.5rem;
+        color: white;
+        margin-right: 10px;
+        font-size: 2.5rem;
+      }
+
+    }
+    .right-bloc {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: white;
+
+      .bloc {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+
+        .footer-title {
+          margin-bottom: 15px;
+
+        }
+
+        .footer-text {
+          margin-bottom: 15px;
+        }
+
+        .footer-link {
+          color: white;
+          text-decoration: none;
+          margin-bottom: 5px;
+
+        }
+
+      }
+
+    }
+  }
+  .footer-bottom {
+    height: 15%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 500;
+
+    hr {
+      width: 70%;
+      align-self: center;
+      margin: 10px auto 15px auto;
+      border: 1px solid white;
+
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 15px;
+    }
+  }
+}
