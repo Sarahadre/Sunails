@@ -52,6 +52,58 @@
   padding: 10px;
 }
 
+.about-navbar {
+  background-color: #EFE9E4;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.about-navbar .logo {
+  font-family: "Kite One", sans-serif;
+  font-size: 35px;
+  color: #774542;
+}
+.about-navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.about-navbar ul li {
+  padding: 10px 20px;
+  position: relative;
+}
+.about-navbar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 100%;
+}
+.about-navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #774542;
+  transition: all 0.3s;
+}
+.about-navbar ul li a:hover {
+  color: white;
+}
+.about-navbar ul li .dropdown-menu {
+  display: none;
+}
+.about-navbar ul li .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+  padding: 0px;
+}
+.about-navbar ul li .dropdown-menu ul li {
+  width: 200px;
+  padding: 10px;
+}
+
 .line-btn {
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
