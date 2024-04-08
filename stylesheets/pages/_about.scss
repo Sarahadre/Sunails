@@ -1,0 +1,233 @@
+//HEADER
+.about-header {
+  height: 700px;
+  width: 100%;
+  position: relative;
+
+  .overlay {
+    height: 635px;
+    width: 100%;
+    position: relative;
+
+    .about-banner {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .bg-img {
+        background-image: url('../images/about-banner.png');
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+
+      }
+
+      .banner-text{
+          background-color: $beige;
+          height: 100%;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .intro-banner {
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            margin-left: 70px;
+          }
+
+          .main-title {
+            color: $brown;
+            font-family: "cormorant infant";
+            font-size: 50px;
+            font-style: italic;
+            font-weight: 500;
+            margin-bottom: 50px;
+            margin-left: 70px;
+          }
+
+          .banner-description {
+            margin-bottom: 60px;
+            margin-left: 70px;
+            width: 65%;
+            text-align: justify;
+          }
+
+            .line-btn {
+          margin-left: 70px;
+          height: 50px;
+          margin-top: 40px;
+          color: $brown;
+          border: solid 1px $brown;
+
+          &:hover {
+            border-color: white;
+            fill: white;
+            color: white;
+          }
+
+          &:active {
+            border-color: white;
+            color: white;
+            fill: white;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+//TEAM BLOC
+.about-team-bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .about-team-title {
+    color: $brown;
+    font-family: "cormorant infant";
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+
+  .cta-btn {
+    margin-bottom: 70px;
+  }
+}
+
+// CONTACT BLOC
+.bg-contact-bloc {
+  display: flex;
+  flex-direction: column;
+  background-color: $beige;
+  height: 765px;
+  align-items: center;
+
+  .contact-title {
+    color: $brown;
+    font-family: "cormorant infant";
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .contact-bloc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+      .left-bloc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 510px;
+        height: 270px;
+      }
+
+      iframe {
+        width: 510px;
+        height: 270px;
+      }
+
+    }
+
+    .right-bloc {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      margin: auto 0;
+
+
+      h2 {
+        color: $brown;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 30px 15px 30px 15px;
+      }
+
+      p {
+        font-size: 25px;
+        margin-left: 15px;
+        line-height: 1,8;
+      }
+
+      span {
+        color: $brown;
+      }
+
+      .telephone {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+//FOOTER CTA
+.about-cta-footer {
+  background-image: url('../images/about-cta.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 525px;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background {
+    background-color: $beige;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 700px;
+    position: relative;
+
+    .italic-title {
+      font-family: "cormorant infant", serif;
+      font-size: 60px;
+      font-weight: 500;
+      font-style: italic;
+      opacity: 0.8;
+    }
+
+    .normal-title {
+      font-family: "montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 0.1;
+    }
+
+  }
+
+  .cta-btn {
+    position: absolute;
+    top: 70%;
+
+  }
+
+  .full-btn:hover,
+  .full-btn:active {
+    background-color: $beige;
+    opacity: 0.8;
+  }
+}
