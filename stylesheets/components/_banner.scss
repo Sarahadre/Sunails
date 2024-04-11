@@ -1,0 +1,163 @@
+// HOME BANNER + RECTANGLE INTRO
+
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+
+  .main-title{
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: "Cormorant Infant", serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    line-height: 3.8rem;
+    opacity: 0.8;
+
+    .logo {
+      font-size: 5rem;
+      font-family: "Kite One", sans-serif;
+      align-self: center;
+      font-style: normal;
+      opacity: 1;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .banner-btn {
+    margin-top: 4rem;
+  }
+
+}
+.intro {
+  background-color: $beige;
+  height:  130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .text-intro {
+    text-align: center;
+    width: 60%;
+  }
+}
+
+// PRESTATIONS BANNER + RECTANGLE INTRO
+
+.prestation-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .main-title {
+    font-family: "cormorant infant";
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.prestation-intro {
+  background-color: $beige;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .text-intro {
+    color: $brown;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    width: 75%;
+  }
+}
+
+// ABOUT BANNER
+
+.about-banner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .bg-img {
+    background-image: url('../images/about-banner.png');
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .banner-text{
+      background-color: $beige;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .intro-banner {
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 30px;
+        margin-left: 70px;
+      }
+
+      .main-title {
+        color: $brown;
+        font-family: "cormorant infant";
+        font-size: 50px;
+        font-style: italic;
+        font-weight: 500;
+        margin-bottom: 50px;
+        margin-left: 70px;
+      }
+
+      .banner-description {
+        margin-bottom: 60px;
+        margin-left: 70px;
+        width: 65%;
+        text-align: justify;
+      }
+
+        .line-btn {
+      margin-left: 70px;
+      height: 50px;
+      margin-top: 40px;
+      color: $brown;
+      border: solid 1px $brown;
+
+      &:hover {
+        border-color: white;
+        fill: white;
+        color: white;
+      }
+
+      &:active {
+        border-color: white;
+        color: white;
+        fill: white;
+      }
+
+    }
+  }
+}
